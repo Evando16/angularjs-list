@@ -1,0 +1,21 @@
+<html ng-app="application">
+
+<head>
+    <meta charset="utf-8" />
+    <title> Angular JS List</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/stylesheet.css" />
+</head>
+
+<body ng-controller="listController as vm">
+    <div class="container">
+        <header></header>
+    </div>
+
+    <list directivelist="vm.list" delete-callback="vm.deleteMain(id)"></list>
+</body>
+<script src="angularJs/angular.min.js"></script>
+<script src="app.js"></script>
+
+</html>
